@@ -216,7 +216,7 @@ export const resorts: Resort[] = [
       "Enjoy generous private accommodation designed for groups who want comfort, space, and easy access to the surrounding landscape.",
     logoMark: "◌",
     logoSrc: "/images/guru/logo.png",
-    hero: asset("guru", "13.JPG"),
+    hero: asset("guru", "13.jpg"),
     introImage: asset("guru", "g9.JPG"),
     gallery: assets("guru", [
       "hero.png",
