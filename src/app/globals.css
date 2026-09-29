@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: #f4ede2;
+  color: #2c211b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+::selection {
+  background: #d7ad73;
+  color: #2b1a10;
+}
+
+.luxury-serif {
+  font-family: Georgia, "Times New Roman", serif;
+}
+.text-balance {
+  text-wrap: balance;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(22, 13, 8, 0.82) 0%,
+    rgba(22, 13, 8, 0.35) 42%,
+    rgba(22, 13, 8, 0.08) 72%,
+    rgba(22, 13, 8, 0.28) 100%
+  );
+}
+.bottom-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(20, 12, 7, 0) 0%,
+    rgba(20, 12, 7, 0.78) 72%,
+    rgba(20, 12, 7, 0.94) 100%
+  );
+}
+.fade-left {
+  background: linear-gradient(
+    90deg,
+    #f4ede2 0%,
+    #f4ede2 1%,
+    rgba(244, 237, 226, 0.86) 6%,
+    rgba(244, 237, 226, 0.39) 15%,
+    rgba(244, 237, 226, 0) 29%
+  );
+}
+.dark-fade {
+  background: linear-gradient(
+    90deg,
+    rgba(37, 22, 13, 0.95),
+    rgba(37, 22, 13, 0.65) 46%,
+    rgba(37, 22, 13, 0.05)
+  );
+}
+
+.noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+}
+
+.swiper-pagination-bullet {
+  background: #fff !important;
+  opacity: 0.45 !important;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  width: 28px !important;
+  border-radius: 99px !important;
+}
+
+@media (max-width: 768px) {
+  .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(22, 13, 8, 0.38),
+      rgba(22, 13, 8, 0.78)
+    );
+  }
+  .fade-left {
+    background: linear-gradient(
+      180deg,
+      rgba(244, 237, 226, 0.72) 0%,
+      rgba(244, 237, 226, 0.35) 30%,
+      rgba(244, 237, 226, 0) 68%
+    );
+  }
+}
