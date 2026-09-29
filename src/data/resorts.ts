@@ -135,7 +135,7 @@ export const resorts: Resort[] = [
       "Rest in a traditional Mongolian ger with the space and comfort you need for a memorable stay with family, friends, or as a couple.",
     logoMark: "◉",
     logoSrc: "/images/alungoo/logo.png",
-    hero: asset("alungoo", "15.JPG"),
+    hero: asset("alungoo", "15.jpg"),
     introImage: asset("alungoo", "30.JPG"),
     gallery: assets("alungoo", [
       "1.JPG",
